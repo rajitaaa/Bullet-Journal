@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rajita.bullet_journal.NewLogs">
+
+    <CalendarView
+        android:id="@+id/calendarView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignStart="@+id/button10"
+        android:layout_below="@+id/calendarView2"
+        android:layout_marginTop="58dp"
+        android:width="1.5in"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:fontFamily="casual"
+        android:text="+ Add Today's Log"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/holo_orange_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:width="1.5in"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:fontFamily="casual"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/holo_orange_light"
+        android:textStyle="bold"
+        android:text="View Previous Logs" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/calendarView2"
+        android:layout_alignEnd="@+id/calendarView2"
+        android:layout_alignRight="@+id/calendarView2"
+        android:fontFamily="serif-monospace"
+        android:text="Daily and Monthly Logs"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@android:color/holo_orange_light"
+        android:textSize="0.15in"
+        android:textStyle="bold" />
+</RelativeLayout>
