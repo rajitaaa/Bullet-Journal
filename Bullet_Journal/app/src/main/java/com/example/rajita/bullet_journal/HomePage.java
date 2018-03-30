@@ -13,7 +13,7 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        Button logs,todo,deadline,habit,bday,trips,lib,other;
+        Button logs,todo,deadline,habit,bday,trips,lib,other,speech;
 
         logs = (Button) findViewById(R.id.button);
         todo = (Button) findViewById(R.id.button2);
@@ -23,6 +23,7 @@ public class HomePage extends AppCompatActivity {
         trips = (Button) findViewById(R.id.button6);
         lib = (Button) findViewById(R.id.button7);
         other = (Button) findViewById(R.id.button8);
+        speech = (Button) findViewById(R.id.button9);
 
         logs.setOnClickListener(new View.OnClickListener() {    //FOR NEW LOGS
             public void onClick(View arg0) {
@@ -88,6 +89,26 @@ public class HomePage extends AppCompatActivity {
                 // Start NewActivity.class
                 Intent myIntent = new Intent(HomePage.this,
                         Library.class);
+                startActivity(myIntent);
+            }
+        });
+
+        other.setOnClickListener(new View.OnClickListener() {      //FOR BIRTHDAYS
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(HomePage.this,
+                        OtherEntry.class);
+                startActivity(myIntent);
+            }
+        });
+
+        speech.setOnClickListener(new View.OnClickListener() {      //FOR BIRTHDAYS
+            public void onClick(View arg0) {
+
+                // Start NewActivity.class
+                Intent myIntent = new Intent(HomePage.this,
+                        SpeechToText.class);
                 startActivity(myIntent);
             }
         });
